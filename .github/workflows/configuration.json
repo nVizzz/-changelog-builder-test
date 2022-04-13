@@ -17,5 +17,6 @@
         "title": "## 💬 Other",
         "labels": ["other"]
       }
-    ]
+    ],
+    "pr_template": "- ${{TITLE}} ${{NUMBER}} (${{AUTHOR}})"
 }
