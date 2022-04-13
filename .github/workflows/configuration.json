@@ -1,22 +1,4 @@
 {
-    "template": "${{CHANGELOG}}\n\n## 💬 Other\n\n${{UNCATEGORIZED}}",
-    "categories": [
-      {
-        "title": "## 🚀 Features",
-        "labels": ["feature"]
-      },
-      {
-        "title": "## 🐛 Fixes",
-        "labels": ["fix"]
-      },
-      {
-        "title": "## 🧪 Tests",
-        "labels": ["test"]
-      },
-      {
-        "title": "## 💬 Other",
-        "labels": ["other"]
-      }
-    ],
-    "pr_template": "- ${{TITLE}} #${{NUMBER}} ([${{AUTHOR}}](https://github.com/${{AUTHOR}}))"
+  "template": "${{CHANGELOG}}\n\n**Merged pull requests:**\n\n${{UNCATEGORIZED}}",
+  "pr_template": "- ${{TITLE}} #${{NUMBER}} ([${{AUTHOR}}](https://github.com/${{AUTHOR}}))"
 }
