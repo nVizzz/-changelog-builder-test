@@ -19,7 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: false
           VERBOSE: true
-          DRY_RUN: false
+          DRY_RUN: true
           DEFAULT_BUMP: patch
           RELEASE_BRANCHES: main
 
@@ -28,6 +28,8 @@ jobs:
         uses: mikepenz/release-changelog-builder-action@v2
         with:
           configuration: ".github/workflows/configuration.json"
+          fromTag: ${{steps.bump_version.outputs.tag}}
+          toTag: ${{steps.bump_version.outputs.new_tag}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
