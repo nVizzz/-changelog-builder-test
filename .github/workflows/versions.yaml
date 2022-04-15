@@ -29,7 +29,6 @@ jobs:
         with:
           configuration: ".github/workflows/configuration.json"
           fromTag: ${{steps.bump_version.outputs.tag}}
-          toTag: ${{steps.bump_version.outputs.new_tag}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
